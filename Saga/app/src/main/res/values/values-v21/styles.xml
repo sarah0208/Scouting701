@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Saga2018" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/DarkGrey</item>
+        <item name="android:colorBackground">@color/BackGroundGreen</item>
+        <item name="colorPrimaryDark">@color/DarkGrey</item>
+        <item name="colorAccent">@color/Goldish</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:textColorPrimary">@color/Black</item>
+    </style>
+
+    <style name="Saga2018wAB" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="colorPrimary">@color/DarkGrey</item>
+        <item name="android:colorBackground">@color/BackGroundGreen</item>
+        <item name="colorPrimaryDark">@color/DarkGrey</item>
+        <item name="colorAccent">@color/Goldish</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_downloadEventListTitle"
+            android:id="@+id/text_downloadEventListTitle"
+            android:typeface="serif"
+            android:textColor="@color/White"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/downloadEventListView"
+            android:layout_below="@+id/text_downloadEventListTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_tbaEventListTitle"
+            android:id="@+id/text_tbaEventListTitle"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <com.vandenrobotics.saga2018.views.EventListView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/tbaEventListView"
+            android:layout_below="@+id/text_tbaEventListTitle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

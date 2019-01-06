@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="697dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/field_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:background="@drawable/field2018blue">
+
+            <TextView
+                android:id="@+id/teleTv_switch1Counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.179"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.162" />
+
+            <TextView
+                android:id="@+id/teleTv_scaleCounter"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.499"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.162" />
+
+            <TextView
+                android:id="@+id/teleTv_switch2Counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.825"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.162" />
+
+            <TextView
+                android:id="@+id/teleTv_exchangeCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.974"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.451" />
+
+            <Button
+                android:id="@+id/teleBtn_exchangeCube"
+                android:layout_width="51dp"
+                android:layout_height="86dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.632" />
+
+            <Button
+                android:id="@+id/teleBtn_switch2Cube"
+                android:layout_width="83dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.705"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.314" />
+
+            <Button
+                android:id="@+id/teleBtn_scaleCube"
+                android:layout_width="77dp"
+                android:layout_height="78dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.37"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.235" />
+
+            <Button
+                android:id="@+id/teleBtn_switch1Cube"
+                android:layout_width="86dp"
+                android:layout_height="81dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.025"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.309" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1000">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/teleBtn_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".00012"
+                android:fontFamily="casual"
+                android:text="@string/start_match"
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+
+            <CheckBox
+                android:id="@+id/teleCb_removeCube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".00012"
+                android:fontFamily="casual"
+                android:text="@string/remove_cube"
+                android:textColor="@color/Goldish"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+            <CheckBox
+                android:id="@+id/teleCb_pickUpCube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/picked_up_cube"
+                android:textColor="@color/Goldish"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+
+
+                <CheckBox
+                    android:id="@+id/teleRb_climb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".00012"
+                    android:fontFamily="casual"
+                    android:text="@string/climb"
+                    android:textColor="@color/Goldish"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/teleRb_climbAssist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".00012"
+                    android:fontFamily="casual"
+                    android:text="@string/climb_assist"
+                    android:textColor="@color/Goldish"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/teleRb_parking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".00012"
+                    android:fontFamily="casual"
+                    android:text="@string/parking"
+                    android:textColor="@color/Goldish"
+                    android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/teleCb_humanPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".00012"
+                android:fontFamily="casual"
+                android:text="@string/human_player"
+                android:textColor="@color/Goldish"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+            <CheckBox
+                android:id="@+id/teleCb_disabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".00012"
+                android:text="@string/checkBox_robotDisabled"
+                android:textColor="@color/Goldish" />
+
+            <CheckBox
+                android:id="@+id/teleCb_redCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".00012"
+                android:text="@string/CheckBox_redCard"
+                android:textColor="@color/Goldish" />
+
+            <CheckBox
+                android:id="@+id/teleCb_yellowCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".00012"
+                android:text="@string/CheckBox_yellowCard"
+                android:textColor="@color/Goldish" />
+
+
+            <TextView
+                android:id="@+id/teleTv_foulNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".00012"
+                android:text="@string/number_of_fouls"
+                android:textColor="@color/Goldish" />
+
+            <com.vandenrobotics.saga2018.views.NumberPicker
+                android:id="@+id/teleNp_foulNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.vandenrobotics.saga2018.views.NumberPicker>
+
+            <TextView
+                android:id="@+id/teleTv_techFoulNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".00012"
+                android:text="@string/number_of_tech_fouls"
+                android:textColor="@color/Goldish" />
+
+            <com.vandenrobotics.saga2018.views.NumberPicker
+                android:id="@+id/teleNp_techFoulNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.vandenrobotics.saga2018.views.NumberPicker>
+
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".00012"
+                android:id="@+id/teleTb_enableCubes"
+                android:textOn="@string/enable_cube_change"
+                android:textOff="@string/disable_cube_change"/>
+
+            <Button
+                android:id="@+id/teleBtn_finishMatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".00012"
+                android:fontFamily="casual"
+                android:onClick="finishMatch"
+                android:text="@string/finish_match"
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

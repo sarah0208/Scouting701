@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGroundGreen"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.vandenrobotics.saga2018.activities.ScoutActivity">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView2">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textViewSpinnerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_ScoutInformation"
+        android:textColor="@color/Goldish"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewSpinnerInfo"
+        android:text="@string/text_promptSpinnerDevice"
+        android:textColor="@color/Goldish"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerDeviceNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:prompt="@string/text_promptSpinnerDevice"
+        />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerDeviceNumber"
+        android:text="@string/text_promptSpinnerMatch"
+        android:textColor="@color/Goldish"
+        android:textSize="16sp" />
+
+
+    <com.vandenrobotics.saga2018.views.NumberPicker
+        android:id="@+id/pickerMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:textColor="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pickerMatch"
+        android:text="@string/text_promptSpinnerTeam"
+        android:textColor="@color/Goldish"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerTeamNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:prompt="@string/text_promptSpinnerTeam" />
+
+    <Button
+        android:id="@+id/button_startMatch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="activityMatch"
+        android:text="@string/button_startMatch"
+        android:textColor="@color/Goldish"
+        android:textSize="24sp"
+        android:layout_below="@+id/button_sendData"/>
+
+    <Button
+        android:id="@+id/button_sendData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerTeamNumber"
+        android:layout_marginTop="18dp"
+        android:onClick="sendDataViaBluetooth"
+        android:text="@string/send_data_via_bluetooth"
+        android:textColor="@color/Goldish" />
+
+    <CheckBox
+        android:id="@+id/checkBox_enableDataTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_sendData"
+        android:layout_alignBottom="@+id/button_sendData"
+        android:layout_toEndOf="@+id/button_sendData"
+        android:layout_toRightOf="@+id/button_sendData" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

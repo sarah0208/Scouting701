@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    tools:context="com.vandenrobotics.saga2018.activities.PitScoutingActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/pit_spinnerTeamNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/pitTv_auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_autoType"
+                android:textColor="@color/White" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pitCb_autoCrossesBaseline"
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:text="@string/CheckBox_crossBaseline"
+                    android:textColor="@color/Goldish" />
+
+                <CheckBox
+                    android:id="@+id/pitCb_autoCubeInSwitch"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/CheckBox_cube_in_switch"
+                    android:textColor="@color/Goldish" />
+
+                <CheckBox
+                    android:id="@+id/pitCb_autoCubeInScale"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/CheckBox_cube_in_scale"
+                    android:textColor="@color/Goldish" />
+
+                <CheckBox
+                    android:id="@+id/pitCb_autoCubeInExchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/CheckBox_cube_in_exchange"
+                    android:textColor="@color/Goldish" />
+
+                <CheckBox
+                    android:id="@+id/pitCb_autoOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/CheckBox_other_auto"
+                    android:textColor="@color/Goldish" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_switch_or_scale"
+                android:textColor="@color/White" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pitCb_canGetScale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/CheckBox_scale"
+                    android:textColor="@color/Goldish" />
+
+                <CheckBox
+                    android:id="@+id/pitCb_canGetSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/CheckBox_switch"
+                    android:textColor="@color/Goldish" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_averageSpeed"
+                android:textColor="@color/White"  />
+
+            <EditText
+                android:id="@+id/pitEt_averageSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/Goldish"  />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_cycleAreas"
+                android:textColor="@color/White"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pitCb_cycleGround"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/CheckBox_ground"
+                    android:textColor="@color/Goldish" />
+
+                <CheckBox
+                    android:id="@+id/pitCb_cyclePortal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/CheckBox_portal"
+                    android:textColor="@color/Goldish" />
+
+                <CheckBox
+                    android:id="@+id/pitCb_cycleSwitches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/CheckBox_switch2"
+                    android:textColor="@color/Goldish" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_climb"
+                android:textColor="@color/White"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/pitEt_canClimb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/Goldish"  />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_floorPickup"
+                android:textColor="@color/White" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pitRb_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/RadioButton_yes"
+                    android:textColor="@color/Goldish" />
+
+                <RadioButton
+                    android:id="@+id/pitRb_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/RadioButton_no"
+                    android:textColor="@color/Goldish"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_driveTrain"
+                android:textColor="@color/White"  />
+
+            <EditText
+                android:id="@+id/pitEt_driveTrain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/Goldish"  />
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TextView_intakeShooterType"
+                android:textColor="@color/White" />
+
+            <EditText
+                android:id="@+id/pitEt_intakeLift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/Goldish"  />
+
+            <TextView
+                android:id="@+id/PragLang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Programming Language:"
+                android:textColor="@color/White" />
+
+            <EditText
+                android:id="@+id/pitEt_progLang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/Goldish"  />
+            <TextView
+                android:id="@+id/Comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comments:"
+                android:textColor="@color/White" />
+
+            <EditText
+                android:id="@+id/pitEt_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/Goldish"  />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/additional_comments" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <Button
+                android:id="@+id/pitB_savebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:onClick="save"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

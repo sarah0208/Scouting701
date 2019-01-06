@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SAGA 2018</string>
+    <string name="button_scout">SCOUT</string>
+    <string name="button_about">ABOUT APP</string>
+    <string name="text_appTitle">SAGA</string>
+    <string name="text_appSubtitle">For the 2018 FRC Season: Power Up</string>
+
+    <string name="text_appVersion">Deployment Version 4</string>
+    <string name="text_developerInfo">Designed by FIRST Team 701</string>
+
+    <string name="text_tbaEventListTitle">2018 FRC Events</string>
+    <string name="text_downloadEventListTitle">Downloaded Events</string>
+
+    <string name="text_titleAbout">ABOUT SAGA</string>
+    <string name="text_messageAbout">SAGA is an electronic FRC scouting application designed
+        to analyze real statistical data on teams as they compete.  This version is designed for use with
+        the 2018 FRC Season: Power Up \nDesigned by Ben Aldrich and Sarah Bergendahl  . \n- FIRST Team 701 </string>
+
+    <string name="title_activity_main">Choose a FRC Event</string>
+    <string name="text_titleConfirmDelete">Delete Event Data?</string>
+
+    <string name="text_messageConfirmDelete">This will remove all event data from this device, including collected
+        scouting data.  Are you sure you want to proceed?</string>
+
+    <string name="text_titleAlreadyDownloaded">Event Already Downloaded</string>
+    <string name="text_messageAlreadyDownloaded">This event already has existing data.  To reset all data,
+        first delete this file from the downloaded list and then re-download the event.</string>
+    <string name="text_titleProgress">Please wait&#8230;</string>
+    <string name="text_messageProgressEventList">Accessing Event Lists&#8230;</string>
+    <string name="text_messageProgressDownload">Downloading Event Data&#8230;</string>
+    <string name="text_titleNoInternet">Turn on Internet Connection</string>
+    <string name="text_messageNoInternet">Please turn on the internet connection to download an event.</string>
+
+    <string name="title_activity_scout">ScoutActivity</string>
+    <string name="text_ScoutInformation">Setup the Next Match</string>
+    <string name="text_promptSpinnerDevice">Select a device to sort your data and auto-load the match and team number to scout from
+        hard copy files that were downloaded when you downloaded the event.</string>
+
+    <string-array name="deviceOptions">
+        <item>Red 1</item>
+        <item>Red 2</item>
+        <item>Red 3</item>
+        <item>Blue 1</item>
+        <item>Blue 2</item>
+        <item>Blue 3</item>
+    </string-array>
+
+    <string name="text_promptSpinnerMatch">Select a match that you would like to scout at this event.  Only change
+        this value if you know that you need to go to a specific match (helpful for when matches are replayed or if
+        you introduce a new device to the scouting system in the middle of a competition).</string>
+    <string name="hint_editMatch">Enter a match number.</string>
+    <string name="text_promptSpinnerTeam">Select a team to scout for this match.  Choose from any team at the event,
+        as downloaded from The Blue Alliance when you downloaded the event.  Only change this value if it seems that the
+        matchlist did not downloaded properly or you want to work without it.</string>
+    <string name="button_startMatch">Start Match</string>
+
+    <string name="title_activity_match">MatchActivity</string>
+    <string name="title_initTab">Init Info</string>
+    <string name="title_autoTab">Autonomous</string>
+    <string name="title_teleTab">Tele-Op</string>
+    <string name="title_postTab">Post Match</string>
+
+    <string name="text_teamNumber">Team #</string>
+    <string name="text_matchNumber">Match #</string>
+    <string name="text_deviceNumber">Device #</string>
+
+    <string name="cb_noShow">No Show</string>
+    <string name="text_titleNoShow">Proceed to Next Match?</string>
+    <string name="text_messageNoShow">Click OK to mark this robot as a no show and continue to the next match.</string>
+
+    <string name="cb_hadAuto">Had Autonomous?</string>
+
+    <string name="cb_endInAuto">Robot Ends in Auto Zone?</string>
+    <string name="cb_hadOther">Robot had Other Autonomous?</string>
+
+    <string name="text_fieldDescription">FIELD DIAGRAM</string>
+    <string name="text_PlaceHolder"> </string>
+
+    <string name="text_numFouls">Number of Fouls Incurred by This Robot</string>
+    <string name="cb_gotRedCard">Robot Received Red Card?</string>
+    <string name="cb_gotYellowCard">Robot Received Yellow Card?</string>
+    <string name="cb_wasDisabled">Was Disabled During Match?</string>
+
+    <string name="button_finish">Finish Match</string>
+    <string name="text_numTechFouls">Number of Technical Fouls Incurred by This Robot</string>
+
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+
+    <string name="match_scout">Match Scout</string>
+    <string name="pit_scout">Pit Scout</string>
+
+    <string name="send_data_via_bluetooth">Send Data Via Bluetooth</string>
+
+    <string name="EditText_time">time</string>
+    <string name="TestView_floorQuestion">Do they have a floor intake?</string>
+    <string name="RadioButton_no">No</string>
+    <string name="CheckBox_stayInLP">stay in launchpad</string>
+    <string name="TextView_autoQuestion">What kind of auto?</string>
+    <string name="RadioButton_yes">Yes</string>
+
+    <string name="button_previous">Previous</string>
+    <string name="button_next">Back</string>
+    <string name="button_cancel2">Cancel</string>
+    <string name="button_submit">Submit</string>
+
+    <string name="checkBox_hadAuto">Had Auto</string>
+    <string name="checkBox_crossedBaseline">Crossed autoline</string>
+
+    <string name="item_about">About</string>
+    <string name="item_settings">Settings</string>
+    <string name="item_exit">Exit</string>
+
+    <string name="CheckBox_yellowCard">Yellow Card</string>
+    <string name="CheckBox_redCard">Red Card</string>
+    <string name="text_numOfTecFouls">Number of Tech Fouls</string>
+    <string name="text_numOfFouls">Number of Fouls</string>
+
+    <string name="text_number">#</string>
+    <string name="checkBox_robotDisabled">Robot Disabled</string>
+    <string name="checkBox_hadOther">Had Other</string>
+    <string name="editText_yearNum">number of years</string>
+    <string name="text_climbTime">Time it takes to climb:</string>
+    <string name="editText_climbTime">climb time</string>
+    <string name="drive_train_type">drive train type</string>
+    <string name="type_of_drive_train">Type of drive train:</string>
+    <string name="how_many_gears_can_they_do_in_one_match">How many gears can they do in one match?</string>
+    <string name="remove_cube">Remove cube</string>
+    <string name="picked_up_cube">Picked up cube</string>
+    <string name="start_match">Start match</string>
+    <string name="power_ups">POWER UPS</string>
+    <string name="boost">Bst</string>
+    <string name="activate">Activate</string>
+    <string name="force">Fce</string>
+    <string name="levitate">Lev</string>
+    <string name="human_player">Human player at Vault</string>
+    <string name="finish_match">Finish match</string>
+    <string name="undo">Undo</string>
+    <string name="switch2">Switch2</string>
+    <string name="scale">Scale</string>
+    <string name="switch1">Switch1</string>
+    <string name="title_activity_pit_scouting">PitScoutingActivity</string>
+
+    <string name="TextView_pitscouting">Pit Scouting</string>
+    <string name="TextView_autoType">Type of Auto?</string>
+    <string name="TextView_switch_or_scale">Can it get cubes into the switch, scale, or both?</string>
+    <string name="TextView_averageSpeed">What is the average speed of the robot?</string>
+    <string name="TextView_cycleAreas">Where does the robot cycle?</string>
+    <string name="TextView_climb">Can the robot climb?</string>
+    <string name="TextView_floorPickup">Is it able to pick up boxes on the floor?</string>
+    <string name="TextView_driveTrain">What type of drive train does the robot use?</string>
+    <string name="TextView_intakeShooterType">What type of intake/lift or shooter is used?</string>
+
+    <string name="CheckBox_crossBaseline">Crosses Autoline</string>
+    <string name="CheckBox_cube_in_switch">Cube in switch</string>
+    <string name="CheckBox_cube_in_scale">Cube in Scale</string>
+    <string name="CheckBox_cube_in_exchange">Cube in Exchange</string>
+    <string name="CheckBox_other_auto">Other</string>
+    <string name="CheckBox_switch">Switch</string>
+    <string name="CheckBox_scale">Scale</string>
+    <string name="CheckBox_ground">Ground</string>
+    <string name="CheckBox_portal">Portal</string>
+    <string name="CheckBox_switch2">Switches</string>
+    <string name="number_of_fouls">Number of Fouls</string>
+    <string name="number_of_tech_fouls">Number of Tech Fouls</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="red1">Red1</string>
+    <string name="red2">Red2</string>
+    <string name="red3">Red3</string>
+
+    <string name="RadioButton_floorPickup">Yes</string>
+    <string name="disable_ownership_change">Disable Ownership Change</string>
+    <string name="enable_ownership_change">Enable Ownership Change</string>
+    <string name="disable_cube_change">Disable Cube Change</string>
+    <string name="enable_cube_change">Enable Cube Change</string>
+    <string name="climb">Climb</string>
+    <string name="climb_assist">Climb Assist</string>
+    <string name="parking">Parking</string>
+    <string name="red_switch_alliance">Red Switch Alliance</string>
+    <string name="red_scale">Red Scale</string>
+    <string name="blue_scale">Blue Scale</string>
+    <string name="blue_switch_alliance">Blue Switch Alliance</string>
+    <string name="blue_switch_opponent">Blue Switch Opponent</string>
+
+    <string name="where_does_the_cat_fly">Where does the cat fly?</string>
+    <string name="in_space">In space</string>
+    <string name="in_the_ocean">In the ocean</string>
+    <string name="in_the_sky">In the sky</string>
+    <string name="does_my_mom_yell_a_lot">Does my mom yell a lot?</string>
+    <string name="what_does_my_dog_want">What does my dog want?</string>
+    <string name="food">Food</string>
+    <string name="water">Water</string>
+    <string name="sleep">Sleep</string>
+    <string name="attention">Attention</string>
+    <string name="exercise">Exercise</string>
+    <string name="what_color_is_my_mom_s_hair">What color is my mom\'s hair?</string>
+    <string name="enter_color">Enter color</string>
+    <string name="save">SAVE</string>
+    
+    <string name="additional_comments">Additional comments</string>
+</resources>

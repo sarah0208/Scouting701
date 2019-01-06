@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vandenrobotics.saga2018.activities.VaultActivity">
+
+    <TextView
+        android:id="@+id/textViewSpinnerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/text_ScoutInformation"
+        android:textColor="@color/Goldish"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_promptSpinnerMatch"
+        android:textColor="@color/Goldish"
+        android:textSize="16sp" />
+
+    <com.vandenrobotics.saga2018.views.NumberPicker
+        android:id="@+id/pickerMatchVault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This Type of Scouting involves watching both vaults from each alliance. Make Sure you record the times as close to the real time as possible."
+        android:textColor="@color/Goldish"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_sendDataVault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendDataViaBluetooth2"
+            android:text="@string/send_data_via_bluetooth"
+            android:textColor="@color/Goldish"
+            android:layout_gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_enableDataTransferVault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_startMatchVault"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="scoutVault"
+        android:text="@string/button_startMatch"
+        android:textColor="@color/Goldish"
+        android:textSize="24sp" />
+
+</LinearLayout>
